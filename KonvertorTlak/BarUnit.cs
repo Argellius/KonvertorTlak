@@ -14,9 +14,9 @@ namespace KonvertorTlak
             switch (unitValue)
             {
                 case Unit.Atm:
-                    return value / 1.01325;
+                    return RoundUp(value / 1.01325);
                 case Unit.Pa:
-                    return  value * 100000;
+                    return  RoundUp(value * 100000);
                 case Unit.Bar:
                     return value;
                 default:

@@ -14,11 +14,11 @@ namespace KonvertorTlak
             switch (unitValue)
             {
                 case Unit.Atm:
-                    return value / 101325;
+                    return RoundUp(value / 101325);
                 case Unit.Pa:
                     return value;
                 case Unit.Bar:
-                    return value / 100000;
+                    return RoundUp(value / 100000);
                 default:
                     throw new Exception("Unit conversion is not defined");
             }

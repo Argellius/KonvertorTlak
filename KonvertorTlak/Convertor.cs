@@ -9,5 +9,11 @@ namespace KonvertorTlak
     internal abstract class Convertor
     {
         public abstract double Convert(double value, Unit unitValue);
+
+        protected double RoundUp(double value)
+        {
+            return Math.Round(value, 5);
+
+        }
     }
 }

@@ -8,10 +8,11 @@ namespace KonvertorTlak
 {
     internal enum Unit
     {
-        Pa = 0,
-        Bar,
+        None = 0,
+        Pa,
+        Bar ,
         Atm
     }
 
-    
+
 }

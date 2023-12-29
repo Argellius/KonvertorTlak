@@ -17,14 +17,12 @@ namespace KonvertorTlak
                 case Unit.Atm:
                     return value;
                 case Unit.Pa:
-                    return value * 101325;
+                    return RoundUp(value * 101325);
                 case Unit.Bar:
-                    return value * 1.01325;
+                    return RoundUp(value * 1.01325);
                 default:
                     throw new Exception("Unit conversion is not defined");
             }
         }
-
-
     }
 }
