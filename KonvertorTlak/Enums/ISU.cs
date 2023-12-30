@@ -4,15 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KonvertorTlak
+namespace KonvertorTlak.Enums
 {
-    internal enum Unit
+    internal enum ISU
     {
         None = 0,
-        Pa,
-        Bar ,
-        Atm
+        Mili,
+        Mikro,
     }
-
-
 }
